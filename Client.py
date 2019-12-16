@@ -12,7 +12,7 @@ class CharClient(object):
     def start(self):
         self.sock.bind(self.addr)
         self.sock.connect(self.saddr)
-        self.sock.send(bytes(("this a test!").encode("utf-8")))
+        self.sock.send(bytes("this a test!".encode("utf-8")))
 
     def stop(self):
         self.sock.close()
