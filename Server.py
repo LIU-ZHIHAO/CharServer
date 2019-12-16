@@ -39,6 +39,7 @@ class Charserver(object):
         self.sock.close()
 
 
+# Strat server !
 ser1 = Charserver()
 ser1.start()
 ser1.stop()
