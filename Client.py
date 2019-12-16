@@ -4,7 +4,7 @@ import socket
 
 
 class CharClient(object):
-    def __init__(self, ip="192.168.2.101", port=6787, rip="192.168.2.101", rport=12345):
+    def __init__(self, ip="127.0.0.1", port=6787, rip="127.0.0.1", rport=12345):
         self.addr = (ip, port)
         self.saddr = (rip, rport)
         self.sock = socket.socket()
